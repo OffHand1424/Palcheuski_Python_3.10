@@ -38,6 +38,10 @@ def print_hello(number: float) -> None:
 
 
 def main() -> None:
+    """
+    Program Entry Point.
+    :return: None
+    """
     entered_data = input("Enter the number:\n")
     if data_validation(entered_data):
         result_data_conversion = data_conversion(entered_data)

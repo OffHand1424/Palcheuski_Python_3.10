@@ -1,4 +1,8 @@
-def main():
+def main() -> None:
+    """
+    Program Entry Point.
+    :return: None
+    """
     entered_data = input("Enter name:\n")
     if entered_data == "Вячеслав":
         print("Привет, Вячеслав")
