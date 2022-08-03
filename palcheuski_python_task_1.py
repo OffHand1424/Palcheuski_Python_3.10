@@ -19,8 +19,12 @@ def data_conversion(data: str) -> float:
     :param data: str
     :return: float
     """
-    converted_number = float(data)
-    return converted_number
+    try:
+        converted_number = float(data)
+    except ValueError:
+        print("Error converting data to float().")
+    else:
+        return converted_number
 
 
 def print_hello(number: float) -> None:
