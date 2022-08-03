@@ -22,7 +22,7 @@ def data_conversion(data: str) -> float:
     try:
         converted_number = float(data)
     except ValueError:
-        print("Error converting data to float().")
+        print(f"Error converting data ({data}) to float().")
     else:
         return converted_number
 
@@ -43,7 +43,7 @@ def main() -> None:
         result_data_conversion = data_conversion(entered_data)
         print_hello(result_data_conversion)
     else:
-        print("You entered an invalid number.")
+        print(f"You entered an invalid number: {entered_data}")
 
 
 if __name__ == '__main__':
