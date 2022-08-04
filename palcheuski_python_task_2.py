@@ -4,7 +4,7 @@ def main() -> None:
     :return: None
     """
     entered_data = input("Enter name:\n")
-    if entered_data == "Вячеслав":
+    if entered_data.strip() == "Вячеслав":
         print("Привет, Вячеслав")
     else:
         print("Нет такого имени")
